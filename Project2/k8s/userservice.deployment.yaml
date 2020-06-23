@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user-deployment
+spec:
+  selector:
+    matchLabels:
+      app: User_Service
+  template:
+    metadata:
+      labels:
+        app: User_Service
+    spec:
+      containers:
+        - name: userservice
+          image:  leeperry/g3p2-user:latest
+          ports:
+            - containerPort: 8080

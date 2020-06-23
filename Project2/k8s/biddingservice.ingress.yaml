@@ -1,0 +1,25 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: auction-ingress
+  annotations:
+    # kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /bidding(/|$)(.*)
+            backend:
+              serviceName: bidding-service
+              servicePort: 8080
+          - path: /auctions(/|$)(.*)
+            backend:
+              serviceName: auction-service
+              servicePort: 8080
+          - path: /user(/|$)(.*)
+            backend:
+              serviceName: user-service
+              servicePort: 8080
+
+

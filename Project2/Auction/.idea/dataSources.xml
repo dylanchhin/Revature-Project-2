@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="project2" uuid="bd1c5792-c0e2-48a3-8626-c975066d7f23">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://shelterdatabase.c9bsvowbng02.us-east-1.rds.amazonaws.com:5432/postgres</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="postgres@dlbroadwadb.cpbqys5iu3x8.us-east-2.rds.amazonaws.com" uuid="e48f2b24-4244-4d79-8406-e74a73babcf6">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://dlbroadwadb.cpbqys5iu3x8.us-east-2.rds.amazonaws.com:5432/postgres</jdbc-url>
+    </data-source>
+  </component>
+</project>

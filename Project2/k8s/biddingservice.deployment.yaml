@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bidding-deployment
+spec:
+  selector:
+    matchLabels:
+      app: Bidding_Service
+  template:
+    metadata:
+      labels:
+        app: Bidding_Service
+    spec:
+      containers:
+        - name: biddingservice
+          image:  leeperry/g3p2-bidding:latest
+          ports:
+            - containerPort: 8080
